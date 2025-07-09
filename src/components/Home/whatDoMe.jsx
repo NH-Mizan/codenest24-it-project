@@ -1,24 +1,32 @@
-
 export default function WhatDo() {
-    return (
-        <div>
-            <div className="w-11/12 mx-auto ">
-                <div className="flex justify-between py-12 items-center">
-                    
-                    <div>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                        <p className="py-6">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
-                        </p>
-                        <button className="btn btn-primary">Get Started</button>
-                    </div>
-                    <img
-                        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                        className="max-w-sm rounded-lg shadow-2xl "
-                    />
-                </div>
-            </div>
+  return (
+    <section className="w-11/12 max-w-7xl mx-auto py-16">
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* Left Text Content */}
+        <div className="md:w-1/2 space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            What We Do
+          </h1>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            At <span className="font-semibold text-green-600">Code Nest 24</span>, we provide 24/7 IT services designed to empower businesses with reliable, scalable, and secure technology solutions.
+            Our team of experts is dedicated to supporting your organization’s IT needs around the clock, ensuring your operations run smoothly, without interruptions.
+            <br /><br />
+            We manage your IT infrastructure day and night — including servers, networks, and data centers — to ensure seamless operation and quick troubleshooting when needed. Our team guarantees high availability and optimal performance across all platforms.
+          </p>
+          <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition font-medium">
+            Get Started
+          </button>
         </div>
-    )
+
+        {/* Right Image */}
+        <div className="md:w-1/2">
+          <img
+            src="/images/what.jpeg"
+            alt="What we do"
+            className="w-full max-w-sm mx-auto rounded-xl shadow-2xl"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }
