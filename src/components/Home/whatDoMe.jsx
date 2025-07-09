@@ -23,7 +23,7 @@ export default function WhatDo() {
           <img
             src="/images/what.jpeg"
             alt="What we do"
-            className="w-full max-w-sm mx-auto rounded-xl shadow-2xl"
+            className="w-full max-w-lg mx-auto rounded-xl shadow-2xl"
           />
         </div>
       </div>

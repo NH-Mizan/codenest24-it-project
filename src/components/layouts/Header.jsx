@@ -18,7 +18,7 @@ export default function NavBar() {
                             <li><Link href="/">Home</Link></li>
                             <li><Link href="/aboutus">About</Link></li>
                             <li><Link href="/services">Services</Link></li>
-                            <li><Link href="/team">Our Team</Link></li>
+                            <li><Link href="/ourteam">Our Team</Link></li>
                             <li><Link href="/projects">Projects</Link></li>
                         </ul>
                     </div>
@@ -29,7 +29,7 @@ export default function NavBar() {
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/aboutus">About</Link></li>
                         <li><Link href="/services">Services</Link></li>
-                        <li><Link href="/team">Our Team</Link></li>
+                        <li><Link href="/ourteam">Our Team</Link></li>
                         <li><Link href="/projects">Projects</Link></li>
                     </ul>
                 </div>

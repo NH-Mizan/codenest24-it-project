@@ -56,7 +56,7 @@ export default function Banner() {
                 <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
                 <p className="text-lg md:text-xl">{slide.subtitle}</p>
                 <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition">
-                  Get Started
+                  Contact Now !
                 </button>
               </div>
 
