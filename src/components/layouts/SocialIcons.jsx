@@ -6,7 +6,7 @@ export default function SocialIcons({ contact }) {
   const [showIcons, setShowIcons] = useState(false);
 
   return (
-    <div className="fixed bottom-8 right-4 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-16 right-4 z-50 flex flex-col items-end gap-3">
       {/* Toggle Button */}
       {!showIcons ? (
         <button

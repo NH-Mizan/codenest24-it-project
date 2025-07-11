@@ -3,7 +3,9 @@ import "./globals.css";
 import "./script.js";
 import NavBar from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
-import SocialIcons from "@/components/Home/SocialIcons";
+import SocialIcons from "@/components/layouts/SocialIcons";
+import ScrollToTopButton from "@/components/layouts/ScrollToTopButton";
+
 
 
 const geistSans = Geist({
@@ -34,6 +36,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer/>
         <SocialIcons/>
+        <ScrollToTopButton/>
       </body>
     </html>
   );
