@@ -2,7 +2,15 @@
 import { useState } from 'react';
 import { FaXmark, FaPhone, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa6';
 
-export default function SocialIcons({ contact }) {
+ const contact=[
+  {
+    hotline: '+8801846494272',
+    whatsapp: '+8801846494272',
+    facebook_link: 'https://m.me/codenest24',
+  }
+]
+
+export default function SocialIcons() {
   const [showIcons, setShowIcons] = useState(false);
 
   return (
