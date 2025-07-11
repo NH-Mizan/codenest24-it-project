@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body
