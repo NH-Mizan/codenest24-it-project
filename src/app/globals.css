@@ -26,6 +26,9 @@
 .color-bk{
   color: var(--bk-color);
 }
+.color-py{
+  color: var(--primary-color);
+}
 
 
 

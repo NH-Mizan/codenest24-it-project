@@ -88,7 +88,7 @@ export default function Services() {
         variants={fadeLeft}
         className="space-y-6"
       >
-        <h4 className=" font-semibold">OUR SERVICES</h4>
+        <h4 className="color-py font-semibold">OUR SERVICES</h4>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           BEST IT SOLUTION FOR YOUR BUSINESS
         </h2>
@@ -100,7 +100,7 @@ export default function Services() {
         <ul className="space-y-2 text-gray-800">
           {serviceList.map((item, idx) => (
             <li key={idx} className="flex items-start gap-2">
-              <FaCheckCircle className="color-bk mt-1" />
+              <FaCheckCircle className="color-py mt-1" />
               <span>{item}</span>
             </li>
           ))}
