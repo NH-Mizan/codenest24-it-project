@@ -18,7 +18,7 @@ const serviceCards = [
   {
     id: 3,
     icon: '/icons/server.svg',
-    title: 'Network & Server Management',
+    title: 'Web Development',
     description: 'We manage and maintain your network infrastructure and servers...',
   },
   {
@@ -106,7 +106,7 @@ export default function Services() {
           ))}
         </ul>
 
-        <button className="bg-color  color-wt px-6 py-3 rounded-full font-medium mt-4">
+        <button className="bg-color hover:bg-hover  color-wt px-6 py-3 rounded-full font-medium mt-4">
           Explore Services →
         </button>
       </motion.div>

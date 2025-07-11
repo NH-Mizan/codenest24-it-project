@@ -29,6 +29,9 @@
 .color-py{
   color: var(--primary-color);
 }
+.bg-hover{
+  background-color: var(--secondary-color);
+}
 
 
 
@@ -91,3 +94,4 @@ body {
   color:var(--wt-color);
 }
 /* What To Do Section */
+

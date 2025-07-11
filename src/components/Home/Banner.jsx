@@ -52,10 +52,10 @@ export default function Banner() {
           <div className="w-full h-full bg-black/60 px-6 md:px-20 flex items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
               {/* Left Text */}
-              <div className="text-white space-y-5 animate-fadeIn">
+              <div className="color-wt space-y-5 animate-fadeIn">
                 <h1 className="text-3xl md:text-5xl font-bold">{slide.title}</h1>
                 <p className="text-lg md:text-xl">{slide.subtitle}</p>
-                <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full transition">
+                <button className="bg-color hover:bg-hover color-wt px-6 py-2 rounded-full transition">
                   Contact Now !
                 </button>
               </div>

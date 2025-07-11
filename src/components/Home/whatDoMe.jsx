@@ -8,12 +8,12 @@ export default function WhatDo() {
             What We Do
           </h1>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-            At <span className="font-semibold text-green-600">Code Nest 24</span>, we provide 24/7 IT services designed to empower businesses with reliable, scalable, and secure technology solutions.
+            At <span className="font-semibold color-py">Code Nest 24</span>, we provide 24/7 IT services designed to empower businesses with reliable, scalable, and secure technology solutions.
             Our team of experts is dedicated to supporting your organization’s IT needs around the clock, ensuring your operations run smoothly, without interruptions.
             <br /><br />
             We manage your IT infrastructure day and night — including servers, networks, and data centers — to ensure seamless operation and quick troubleshooting when needed. Our team guarantees high availability and optimal performance across all platforms.
           </p>
-          <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition font-medium">
+          <button className="bg-color hover:bg-color color-wt px-6 py-3 rounded-full transition font-medium">
             Get Started
           </button>
         </div>
