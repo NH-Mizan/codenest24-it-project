@@ -57,5 +57,14 @@ body {
   animation: fadeInRight 1.2s ease-out;
 }
 
-
+.bg-img {
+    background-image: url("/images/bg-login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -3px -7px 9px var(--foreground);
+}
+.footer nav{
+  color:var(--background);
+}
 /* What To Do Section */
