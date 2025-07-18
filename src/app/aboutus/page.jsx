@@ -27,7 +27,7 @@ export default function AboutUs() {
         viewport={{ once: true }}
         className="space-y-6"
       >
-        <h4 className="text-green-500 font-medium text-sm uppercase tracking-wide">
+        <h4 className="color-py font-medium text-sm uppercase tracking-wide">
           About Us
         </h4>
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -46,7 +46,7 @@ export default function AboutUs() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition font-medium mt-4"
+          className="bg-color hover:bg-green-600 text-white px-6 py-3 rounded-full transition font-medium mt-4"
         >
           Learn More →
         </motion.button>
