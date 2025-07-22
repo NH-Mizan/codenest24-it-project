@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <div className="bg-img " >
+        <div className="bg-color" >
             <footer className="footer w-11/12 mx-auto sm:footer-horizontal  text-base-content p-10">
                 <aside>
                     <svg
