@@ -32,6 +32,9 @@
 .bg-hover{
   background-color: var(--secondary-color);
 }
+.bg-gre{
+   background:linear-gradient(45deg, rgb(210, 255, 251), rgb(255, 249, 230));
+}
 
 
 
@@ -48,9 +51,11 @@
 }
 
 body {
-  background: var(--wt-color);
+  background: linear-gradient(45deg, rgb(255, 249, 230), rgb(210, 255, 251));
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 
 @keyframes fadeIn {

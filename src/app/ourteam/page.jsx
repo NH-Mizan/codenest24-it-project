@@ -4,20 +4,21 @@ import { FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
 
 const teamMembers = [
+ 
   {
-    id: 1,
-    name: 'Nahid Hasan',
-    position: 'Lead Frontend Engineer',
-    image: '/team/nahid.jpg',
+    id: 2,
+    name: 'Rafsan Janni',
+    position: 'CEO',
+    image: '/team/rimjhim.jpg',
     facebook: '#',
     linkedin: '#',
     github: '#',
   },
-  {
-    id: 2,
-    name: 'Rimjhim Khatun',
-    position: 'UI/UX Designer',
-    image: '/team/rimjhim.jpg',
+   {
+    id: 1,
+    name: 'Nahid Hasan',
+    position: 'Lead Frontend Engineer',
+    image: '/team/nahid.jpg',
     facebook: '#',
     linkedin: '#',
     github: '#',

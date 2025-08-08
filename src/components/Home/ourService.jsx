@@ -5,25 +5,25 @@ import { motion } from 'framer-motion';
 const serviceCards = [
   {
     id: 1,
-    icon: '/icons/monitoring.svg',
+    icon: '/images/web.jpg',
     title: 'System Monitoring & Maintenance',
     description: 'Proactive monitoring of your IT environment ensures that potential issues...',
   },
   {
     id: 2,
-    icon: '/icons/cloud.svg',
+    icon: '/images/web.jpg',
     title: 'Cloud Solutions',
     description: 'Unlock the power of cloud computing with comprehensive solutions...',
   },
   {
     id: 3,
-    icon: '/icons/server.svg',
+    icon: '/images/web.jpg',
     title: 'Web Development',
     description: 'We manage and maintain your network infrastructure and servers...',
   },
   {
     id: 4,
-    icon: '/icons/backup.svg',
+    icon: '/images/web.jpg',
     title: 'Data Backup & Disaster Recovery',
     description: 'Your data is one of your most valuable assets. We offer reliable backup...',
   },
@@ -68,15 +68,18 @@ export default function Services() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="p-6 bg-white rounded-xl border shadow hover:shadow-lg transition"
+            className=" bg-white rounded-xl border shadow hover:shadow-lg transition"
           >
-            <img src={card.icon} alt={card.title} className="w-10 h-10 mb-4" />
-            <h3 className="text-lg font-bold mb-2">{card.title}</h3>
+            <img src={card.icon} alt={card.title} className="w-full h-32 mb-4 rounded-xl" />
+            <div className="mx-4 h-32">
+              <h3 className="text-lg font-bold mb-2">{card.title}</h3>
             <p className="text-gray-600 text-sm mb-4">{card.description}</p>
-            <button className="w-8 h-8 rounded-full bg-color color-wt flex items-center justify-center">
+           
+            </div>
+             <button className="w-8 h-8 ml-4 mb-6 rounded-full bg-color color-wt flex items-center justify-center">
               →
             </button>
-          </motion.div>
+          </motion.div> 
         ))}
       </div>
 
