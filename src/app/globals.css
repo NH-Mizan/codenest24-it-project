@@ -29,6 +29,9 @@
 .color-py{
   color: var(--primary-color);
 }
+.color-sd{
+  color: var(--secondary-color);
+}
 .bg-hover{
   background-color: var(--secondary-color);
 }

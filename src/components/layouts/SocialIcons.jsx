@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { BiSupport } from "react-icons/bi";
 import {
   FaXmark,
   FaPhone,
@@ -66,7 +67,7 @@ export default function SocialIcons() {
         {showIcons ? (
           <FaXmark className="w-5 h-5" />
         ) : (
-          <img src="/images/mg.png" alt="Message Icon" className="w-6 h-6" />
+          <BiSupport className='w-5 h-5 font-bold text-white text-2xl'/>
         )}
       </button>
     </div>

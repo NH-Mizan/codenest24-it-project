@@ -5,25 +5,25 @@ import { motion } from 'framer-motion';
 const serviceCards = [
   {
     id: 1,
-    icon: '/images/web.jpg',
+    icon: '/images/sr1.png',
     title: 'System Monitoring & Maintenance',
     description: 'Proactive monitoring of your IT environment ensures that potential issues...',
   },
   {
     id: 2,
-    icon: '/images/web.jpg',
+    icon: '/images/sr2.png',
     title: 'Cloud Solutions',
     description: 'Unlock the power of cloud computing with comprehensive solutions...',
   },
   {
     id: 3,
-    icon: '/images/web.jpg',
+    icon: '/images/sr3.png',
     title: 'Web Development',
     description: 'We manage and maintain your network infrastructure and servers...',
   },
   {
     id: 4,
-    icon: '/images/web.jpg',
+    icon: '/images/sr4.png',
     title: 'Data Backup & Disaster Recovery',
     description: 'Your data is one of your most valuable assets. We offer reliable backup...',
   },
@@ -70,7 +70,7 @@ export default function Services() {
             variants={fadeUp}
             className=" bg-white rounded-xl border shadow hover:shadow-lg transition"
           >
-            <img src={card.icon} alt={card.title} className="w-full h-32 mb-4 rounded-xl" />
+            <img src={card.icon} alt={card.title} className="w-18 h-18 mb-4 mt-4 mx-auto" />
             <div className="mx-4 h-32">
               <h3 className="text-lg font-bold mb-2">{card.title}</h3>
             <p className="text-gray-600 text-sm mb-4">{card.description}</p>
