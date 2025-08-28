@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold mb-4"
         >
-          Why <span className="color-sd">Choose Us</span>
+          Why <span className="color-py">Choose Us</span>
         </motion.h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
           Experience the difference that comes with partnering with industry leaders.
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-green-400 shadow-lg hover:shadow-green-400/20 transition-all group"
+              className="bg-gre color-sd rounded-2xl p-8 border border-slate-700 hover:border-green-400 shadow-lg hover:shadow-green-400/20 transition-all group"
             >
               <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-slate-700/60 mb-6 group-hover:bg-green-400/10 transition">
                 {item.icon}
@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
           <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-green-400  text-gray-900 font-semibold shadow-lg hover:scale-105 transition">
             Get Started Today
           </button>
-          <button className="px-6 py-3 rounded-lg border border-[#495db7] color-py hover:border-green-400 hover:text-green-400 transition">
+          <button className="px-6 py-3 rounded-lg border border-[#495db7] color-sd hover:border-green-400 hover:text-green-400 transition">
             Learn More
           </button>
         </div>

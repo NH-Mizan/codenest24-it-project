@@ -9,7 +9,7 @@ const teamMembers = [
     id: 2,
     name: 'Rafsan Janni',
     position: 'CEO',
-    image: '/team/rimjhim.jpg',
+    image: '/images/ceo.jpeg',
     facebook: '#',
     linkedin: '#',
     github: '#',
@@ -17,26 +17,26 @@ const teamMembers = [
    {
     id: 1,
     name: 'Nahid Hasan',
-    position: 'Lead Frontend Engineer',
-    image: '/team/nahid.jpg',
+    position: 'Full Stack Developer',
+    image: '/images/nahid.png',
     facebook: '#',
     linkedin: '#',
     github: '#',
   },
   {
     id: 3,
-    name: 'Shakil Ahmed',
+    name: 'MJ Towfik',
     position: 'Backend Developer',
-    image: '/team/shakil.jpg',
+    image: '/images/toufik.jpg',
     facebook: '#',
     linkedin: '#',
     github: '#',
   },
   {
     id: 4,
-    name: 'Arafat Hossain',
-    position: 'Project Manager',
-    image: '/team/arafat.jpg',
+    name: 'Razwan Ahammad',
+    position: 'Social Media & Community Manager',
+    image: '/images/babuvai.png',
     facebook: '#',
     linkedin: '#',
     github: '#',
@@ -45,7 +45,7 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-gray-100 to-white">
+    <section className="py-20 mt-10">
       <div className="w-11/12 max-w-7xl mx-auto text-center mb-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-white bg-opacity-30 backdrop-blur-md p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-500"
+            className="bg-gre bg-opacity-30 backdrop-blur-md p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-500"
           >
             <div className="relative group">
               <Image

@@ -35,7 +35,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20 w-11/12 max-w-7xl mx-auto">
+    <section className="py-20 w-11/12 mx-auto mt-10">
       <motion.div
         className="text-center mb-14"
         initial={{ opacity: 0, y: 30 }}

@@ -18,7 +18,7 @@ const aboutData = {
 
 export default function AboutUs() {
   return (
-    <section className="w-11/12 max-w-7xl mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="w-11/12  mx-auto py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-10">
       {/* Left Content with animation */}
       <motion.div
         initial={{ opacity: 0, x: -60 }}

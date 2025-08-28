@@ -68,7 +68,7 @@ export default function Services() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className=" bg-white rounded-xl border shadow hover:shadow-lg transition"
+            className=" bg-gre rounded-xl border shadow hover:shadow-lg transition"
           >
             <img src={card.icon} alt={card.title} className="w-18 h-18 mb-4 mt-4 mx-auto" />
             <div className="mx-4 h-32">
@@ -109,7 +109,7 @@ export default function Services() {
           ))}
         </ul>
 
-        <button className="bg-color hover:bg-hover  color-wt px-6 py-3 rounded-full font-medium mt-4">
+        <button className="bg-gradient-to-r from-green-400  hover:bg-hover shadow-lg color-se px-6 py-3 rounded-full font-medium mt-4">
           Explore Services →
         </button>
       </motion.div>
