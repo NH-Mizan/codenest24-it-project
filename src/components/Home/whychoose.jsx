@@ -69,26 +69,26 @@ const WhyChooseUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="bg-gre color-sd rounded-2xl p-8 border border-slate-700 hover:border-green-400 shadow-lg hover:shadow-green-400/20 transition-all group"
+              className="bg-gre color-sd rounded-2xl p-8 border border-slate-700 hover:border-teal-400 shadow-lg hover:shadow-teal-400/20 transition-all group"
             >
-              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-slate-700/60 mb-6 group-hover:bg-green-400/10 transition">
+              <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-slate-700/60 mb-6 group-hover:bg-teal-400/10 transition">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-green-400 transition">
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-teal-400 transition">
                 {item.title}
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
-              <div className="mt-4 w-12 h-0.5 bg-green-400 group-hover:w-20 transition-all"></div>
+              <div className="mt-4 w-12 h-0.5 bg-teal-400 group-hover:w-20 transition-all"></div>
             </motion.div>
           ))}
         </div>
 
         {/* Buttons */}
         <div className="mt-12 flex flex-wrap justify-center gap-4">
-          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-green-400  text-gray-900 font-semibold shadow-lg hover:scale-105 transition">
+          <button className="px-6 py-3 rounded-lg bg-gradient-to-r from-teal-400  text-gray-900 font-semibold shadow-lg hover:scale-105 transition">
             Get Started Today
           </button>
-          <button className="px-6 py-3 rounded-lg border border-[#495db7] color-sd hover:border-green-400 hover:text-green-400 transition">
+          <button className="px-6 py-3 rounded-lg border border-[#495db7] color-sd hover:border-teal-400 hover:text-teal-400 transition">
             Learn More
           </button>
         </div>

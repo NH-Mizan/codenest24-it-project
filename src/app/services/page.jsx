@@ -43,7 +43,7 @@ const services = [
 
 export default function OurServices() {
   return (
-    <section className="py-20 bg-gradient-to-br from-white via-gray-100 to-white w-11/12 max-w-7xl mx-auto">
+    <section className="py-20 w-11/12 mt-10 mx-auto">
       <div className="text-center mb-14">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -66,7 +66,7 @@ export default function OurServices() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
-            className="bg-white/70 backdrop-blur-lg p-6 rounded-xl shadow-md hover:shadow-xl transition hover:scale-[1.03]"
+            className="bg-gre backdrop-blur-lg p-6 rounded-xl shadow-md hover:shadow-xl transition hover:scale-[1.03]"
           >
             <div className="w-14 h-14 mb-4">
               <Image

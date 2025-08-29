@@ -109,7 +109,7 @@ export default function Services() {
           ))}
         </ul>
 
-        <button className="bg-gradient-to-r from-green-400  hover:bg-hover shadow-lg color-se px-6 py-3 rounded-full font-medium mt-4">
+        <button className="bg-gradient-to-r from-teal-400  hover:bg-hover shadow-lg color-se px-6 py-3 rounded-full font-medium mt-4">
           Explore Services →
         </button>
       </motion.div>

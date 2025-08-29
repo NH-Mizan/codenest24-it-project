@@ -3,6 +3,7 @@ import WhatDo from "@/components/Home/whatDoMe";
 import Service from "@/components/Home/ourService";
 import Image from "next/image";
 import WhyChooseUs from "@/components/Home/whychoose";
+import ContactUs from "@/components/Home/contact";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
      <WhatDo/>
      <Service/>
      <WhyChooseUs/>
+     <ContactUs/>
 
    </div>
   );
