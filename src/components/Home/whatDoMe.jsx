@@ -1,3 +1,5 @@
+import LottieAnimation from "../Animation/WhyDolotti";
+
 export default function WhatDo() {
   return (
     <section className="w-11/12 mx-auto py-16">
@@ -20,11 +22,12 @@ export default function WhatDo() {
 
         {/* Right Image */}
         <div className="md:w-1/2">
-          <img
+          {/* <img
             src="/images/what.jpeg"
             alt="What we do"
             className="w-full max-w-lg mx-auto rounded-xl shadow-2xl"
-          />
+          /> */}
+          <LottieAnimation/>
         </div>
       </div>
     </section>
