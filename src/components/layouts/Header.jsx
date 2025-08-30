@@ -41,7 +41,7 @@ export default function NavBar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-color color-wt"> Support </a>
+                    <Link href={'/schedule'} className="btn bg-color color-wt"> Support </Link>
                 </div>
             </div>
         </div>

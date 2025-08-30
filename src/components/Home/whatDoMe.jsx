@@ -2,7 +2,7 @@ import LottieAnimation from "../Animation/WhyDolotti";
 
 export default function WhatDo() {
   return (
-    <section className="w-11/12 mx-auto py-16">
+    <section className="w-11/12 mx-auto md:pt-6">
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left Text Content */}
         <div className="md:w-1/2 space-y-6">
