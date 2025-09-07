@@ -37,7 +37,7 @@ export default function ContactUs() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-6 text-lg md:text-xl text-gray-300"
+          className="mt-6 text-lg md:text-xl text-gray-400"
         >
           Let's collaborate to create innovative solutions that drive your business forward.
         </motion.p>
@@ -46,7 +46,7 @@ export default function ContactUs() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="mt-2 text-sm text-gray-400"
+          className="mt-2 text-sm text-gray-500"
         >
           Experience excellence in every pixel, every interaction, every detail.
         </motion.p>
