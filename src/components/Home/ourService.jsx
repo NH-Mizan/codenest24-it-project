@@ -1,5 +1,5 @@
 'use client';
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaDesktop } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 const serviceCards = [
@@ -88,7 +88,7 @@ export default function Services() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeLeft}
+        variants={fadeUp}
         className="space-y-6"
       >
         <h4 className="color-py font-semibold">OUR SERVICES</h4>
