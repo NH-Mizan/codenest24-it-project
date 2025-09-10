@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { ImYoutube } from "react-icons/im";
 
 const slides = [
   {
@@ -62,11 +63,7 @@ export default function Banner() {
 
               {/* Right Static Image */}
               <div className="hidden md:block animate-fadeInRight">
-                <img
-                  src={rightImage}
-                  alt="right side"
-                  className="max-w-[400px] w-full mx-auto"
-                />
+                <ImYoutube className='text-red-500 w-96 youtube-icon' />
               </div>
             </div>
           </div>

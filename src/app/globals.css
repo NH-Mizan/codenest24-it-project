@@ -84,6 +84,9 @@ body {
     transform: translateX(0);
   }
 }
+.youtube-icon{
+  font-size: 60px;
+}
 
 .animate-fadeIn {
   animation: fadeIn 1s ease-out;
