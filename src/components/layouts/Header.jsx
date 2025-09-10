@@ -1,49 +1,66 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function NavBar() {
-    
-    return (
-        <div className="bg-gre shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-            <div className="navbar w-11/12 mx-auto">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
-                        >
-                            <li><Link href="/">Home </Link></li>
-                            <li><Link href="/aboutus">About</Link></li>
-                            <li><Link href="/services">Services</Link></li>
-                            <li><Link href="/ourteam">Our Team</Link></li>
-                            <li><Link href="/projects">Projects</Link></li>
-                        </ul>
-                    </div>
-                    <div className="logo">
-                     <Link href={'/'}> <img src="/images/logo.png" alt="codenest24" /></Link>
-                           
-                    </div>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal  px-1">
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/aboutus">About</Link></li>
-                        <li><Link href="/services">Services</Link></li>
-                        <li><Link href="/ourteam">Our Team</Link></li>
-                        <li><Link href="/projects">Projects</Link></li>
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    <Link href={'/schedule'} className="btn bg-color color-wt"> Support </Link>
-                </div>
-            </div>
+  return (
+    <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div className="w-11/12 mx-auto flex items-center justify-between py-3">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
+          <img src="/images/logo.png" alt="logo" className="h-10 w-auto" />
+          
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-8 font-medium text-gray-700">
+          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
+          <Link href="/aboutus" className="hover:text-blue-600 transition">About</Link>
+          <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
+          <Link href="/ourteam" className="hover:text-blue-600 transition">Our Team</Link>
+          <Link href="/projects" className="hover:text-blue-600 transition">Projects</Link>
+        </nav>
+
+        {/* CTA Button */}
+        <div className="hidden md:block">
+          <Link href="/schedule" className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
+            Support
+          </Link>
         </div>
-    )
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden flex flex-col gap-[5px] focus:outline-none"
+        >
+          <span className={`w-6 h-[2px] bg-gray-800 rounded transition ${isOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+          <span className={`w-6 h-[2px] bg-gray-800 rounded transition ${isOpen ? "opacity-0" : ""}`} />
+          <span className={`w-6 h-[2px] bg-gray-800 rounded transition ${isOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-white shadow-inner">
+          <nav className="flex flex-col items-center gap-4 py-4 font-medium text-gray-700">
+            <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Home</Link>
+            <Link href="/aboutus" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">About</Link>
+            <Link href="/services" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Services</Link>
+            <Link href="/ourteam" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Our Team</Link>
+            <Link href="/projects" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Projects</Link>
+            <Link
+              href="/schedule"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+            >
+              Support
+            </Link>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
 }
