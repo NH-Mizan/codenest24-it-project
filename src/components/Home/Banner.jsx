@@ -37,7 +37,7 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[350px] lg:h-[600px] overflow-hidden">
       {slides.map((slide, i) => (
         <div
           key={slide.id}
@@ -66,7 +66,7 @@ export default function Banner() {
                 {/* <ImYoutube className='text-red-500 w-96 youtube-icon' /> */}
                  <div className="relative flex items-center justify-center">
                   <ImYoutube className="text-red-500 text-6xl youtube-icon relative z-10" />
-                  <span className="absolute w-20 h-20 rounded-full border-2 border-red-400 animate-spin-slow"></span>
+                  {/* <span className="absolute w-20 h-20 rounded-full border-2 border-red-400 animate-spin-slow"></span> */}
                   <span className="absolute w-28 h-28 rounded-full border-2 border-red-200 animate-ping"></span>
                 </div>
               </div>

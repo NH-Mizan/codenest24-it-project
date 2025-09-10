@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gre opacity-80 shadow-md z-50">
+    <header className="fixed top-0 left-0 right-0 bg-gre  shadow-md z-50">
       <div className="w-11/12 mx-auto flex items-center justify-between py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
