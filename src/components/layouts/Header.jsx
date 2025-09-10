@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+    <header className="fixed top-0 left-0 right-0 bg-gre opacity-80 shadow-md z-50">
       <div className="w-11/12 mx-auto flex items-center justify-between py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -16,17 +16,17 @@ export default function Header() {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-8 font-medium text-gray-700">
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/aboutus" className="hover:text-blue-600 transition">About</Link>
-          <Link href="/services" className="hover:text-blue-600 transition">Services</Link>
-          <Link href="/ourteam" className="hover:text-blue-600 transition">Our Team</Link>
-          <Link href="/projects" className="hover:text-blue-600 transition">Projects</Link>
+        <nav className="hidden md:flex items-center gap-8 font-medium opacity-100  color-py">
+          <Link href="/" className=" transition">Home</Link>
+          <Link href="/aboutus" className=" transition">About</Link>
+          <Link href="/services" className=" transition">Services</Link>
+          <Link href="/ourteam" className=" transition">Our Team</Link>
+          <Link href="/projects" className=" transition">Projects</Link>
         </nav>
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Link href="/schedule" className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition">
+          <Link href="/schedule" className="px-4 py-2 rounded-lg bg-color text-white transition">
             Support
           </Link>
         </div>
@@ -46,15 +46,15 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-inner">
           <nav className="flex flex-col items-center gap-4 py-4 font-medium text-gray-700">
-            <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Home</Link>
-            <Link href="/aboutus" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">About</Link>
-            <Link href="/services" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Services</Link>
-            <Link href="/ourteam" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Our Team</Link>
-            <Link href="/projects" onClick={() => setIsOpen(false)} className="hover:text-blue-600 transition">Projects</Link>
+            <Link href="/" onClick={() => setIsOpen(false)} className="transition">Home</Link>
+            <Link href="/aboutus" onClick={() => setIsOpen(false)} className=" transition">About</Link>
+            <Link href="/services" onClick={() => setIsOpen(false)} className=" transition">Services</Link>
+            <Link href="/ourteam" onClick={() => setIsOpen(false)} className=" transition">Our Team</Link>
+            <Link href="/projects" onClick={() => setIsOpen(false)} className=" transition">Projects</Link>
             <Link
               href="/schedule"
               onClick={() => setIsOpen(false)}
-              className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+              className="px-4 py-2 rounded-lg bg-gre text-white  transition"
             >
               Support
             </Link>

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { PiSparkleLight } from "react-icons/pi";
 
@@ -58,13 +59,14 @@ export default function ContactUs() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
-          <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-teal-400  text-black font-semibold shadow-lg hover:opacity-90 transition">
+          
+          <Link href="/schedule" ><button className="px-6 py-3 rounded-xl bg-gradient-to-r from-teal-400  text-black font-semibold shadow-lg hover:opacity-90 transition">
             Start Your Project →
-          </button>
-          <button className="px-6 py-3 rounded-xl border border-yellow-500  font-semibold shadow-lg hover:bg-yellow-500/20 transition flex items-center">
+          </button></Link>
+          <Link href="/schedule" ><button className="px-6 py-3 rounded-xl border border-yellow-500  font-semibold shadow-lg hover:bg-yellow-500/20 transition flex items-center">
             <FaRegCalendarAlt className="h-4 w-4 mr-2" />
             Schedule Consultation
-          </button>
+          </button></Link>
         </motion.div>
 
         {/* Features */}
