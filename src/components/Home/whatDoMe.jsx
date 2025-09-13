@@ -9,7 +9,7 @@ export default function WhatDo() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             What We Do
           </h1>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             At <span className="font-semibold color-py">Code Nest 24</span>, we provide 24/7 IT services designed to empower businesses with reliable, scalable, and secure technology solutions.
             Our team of experts is dedicated to supporting your organization’s IT needs around the clock, ensuring your operations run smoothly, without interruptions.
             <br /><br />
